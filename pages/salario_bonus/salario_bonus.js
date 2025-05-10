@@ -1,7 +1,11 @@
- function salario( salarioFixo, totalVendas){
+ function bonus(totalVendas){
     let porcentagem = 0.15
     let bonus = totalVendas * porcentagem
-    let salarioTotal = salarioFixo + bonus
+    return bonus
+ }
+ 
+ function salario( salarioFixo, totalVendas){
+    let salarioTotal = salarioFixo + bonus(totalVendas)
     return salarioTotal
  }
 
